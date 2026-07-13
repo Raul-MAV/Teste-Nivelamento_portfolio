@@ -1,0 +1,32 @@
+{
+    "info": {
+        "_postman_id": "86796f09-9009-4b4a-b1bb-39822c6a68ab",
+        "name": "Teste4 API - Operadoras",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "24855323"
+    },
+    "item": [
+        {
+            "name": "Buscar Operadoras",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/operadoras?nome={{nome}}",
+                    "host": ["127.0.0.1"],
+                    "port": "8000",
+                    "path": ["operadoras"],
+                    "query": [
+                        {
+                            "key": "nome",
+                            "value": "{{nome}}",
+                            "description": "Nome da operadora para busca"
+                        }
+                    ]
+                },
+                "description": "Busca operadoras pelo nome no servidor Flask"
+            },
+            "response": []
+        }
+    ]
+}
